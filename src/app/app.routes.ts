@@ -1,13 +1,11 @@
 import {RouterModule, Routes} from '@angular/router';
 
 // APP COMPONENTS
-
-import {PokemonsComponent} from './pokemons/pokemons.component';
-
+import {DashboardComponent} from "./dashboard/dashboard.component";
 
 const ROUTES: Routes = [
   {path: '', redirectTo: 'accueil', pathMatch: 'full'},
-  {path: 'accueil', component: PokemonsComponent},
+  {path: 'accueil', component: DashboardComponent},
 ];
 
 export const APP_ROUTES = RouterModule.forRoot(ROUTES);

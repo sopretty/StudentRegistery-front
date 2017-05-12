@@ -6,18 +6,14 @@ import {APP_ROUTES} from './app.routes';
 import {ToastyModule} from 'ng2-toasty';
 
 import { AppComponent } from './app.component';
-import { PokemonComponent } from './pokemon/pokemon.component';
-import { AddPokemonComponent } from './add-pokemon/add-pokemon.component';
-import { PokemonsComponent } from './pokemons/pokemons.component';
 import {ModalModule} from 'angular2-modal';
 import {BootstrapModalModule} from 'angular2-modal/plugins/bootstrap';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PokemonComponent,
-    AddPokemonComponent,
-    PokemonsComponent
+    DashboardComponent,
   ],
   imports: [
     ModalModule.forRoot(),
