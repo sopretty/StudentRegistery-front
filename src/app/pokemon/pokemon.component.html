@@ -1,0 +1,13 @@
+<section>
+  <div class="card card--big">
+    <div class="card__image" style="background-image: url(https://placeimg.com/640/480/nature); float: none;"></div>
+    <h2 class="card__title">{{pokemon.name}}</h2>
+    <div class="card__text">&nbsp;&nbsp; <b>Attaque :</b> {{pokemon.attack}}&nbsp;&nbsp; <b>Défense :</b>
+      {{pokemon.defense}}&nbsp;&nbsp; <b>Endurance :</b> {{pokemon.stamina}}
+    </div>
+    <div class="card__action-bar">
+      <button class="card__button" (click)="delete()">SUPPRIMER</button>
+      <button class="card__button">PLUS D'INFORMATION</button>
+    </div>
+  </div>
+</section>

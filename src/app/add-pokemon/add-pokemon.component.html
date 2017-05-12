@@ -1,0 +1,19 @@
+<link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Roboto'>
+<div class="container">
+  <form>
+    <h1>Ajouter un nouveau Pokemon</h1>
+    <div class="form-group"><p>
+      <input type="text" [(ngModel)]="pokemon.name" name="name" required="required"/>
+      <label class="control-label">Nom</label><i class="bar"></i></p><p>
+      Attaque
+      <input [(ngModel)]="pokemon.attack" class="form-control" name="attack" type="number" value="0" max="15" min="0"></p> <p>
+      Defense
+      <input [(ngModel)]="pokemon.defense" class="form-control" name="defense" type="number" value="0" max="15" min="0"></p> <p>
+      Endurance
+      <input [(ngModel)]="pokemon.stamina" class="form-control" name="stamina" type="number" value="0" max="15" min="0"></p>
+    </div>
+    <div class="button-container">
+      <button class="button" type="button" (click)="ajouterPokemon()"><span>Valider</span></button>
+    </div>
+  </form>
+</div>
