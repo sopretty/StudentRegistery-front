@@ -8,9 +8,7 @@ export const environment = {
     host: 'localhost',
     port: '8080',
     endpoints: {
-      allPokemon: '/pokemons',
-      deletePokemon: '/pokemons/:id',
-      findByDef: '/Pokemon/search/findByDefense?:def'
+      checkConnexion: '/connexion'
     }
   },
   frontend: {

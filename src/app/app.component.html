@@ -64,6 +64,58 @@
   </style>
 </head>
 <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
+
+<!-- Header -->
+
+<header>
+  <ul>
+    <li><a [routerLink]="['/accueil']">Accueil</a></li>
+    <li><a (click)="openModal()">Contact</a></li>
+    <li style="float:right"><a [routerLink]="['/connexion']" class="active">Connexion</a></li>
+  </ul>
+</header>
+
+<!-- RouterOutlet -->
+
 <router-outlet></router-outlet>
+
+<!-- Footer -->
+
+<footer class="page-footer green">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">LMFI</h5>
+        <p class="grey-text text-lighten-4">Site annuaire des anciens étudiants de la formation Master Informatique à la Faculté des Sciences et Technologies de Vandoeuvre.</p>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Liens</h5>
+        <ul>
+          <li><a class="grey-text text-lighten-3" href="http://www.univ-lorraine.fr/">Université de lorraine</a></li>
+          <li><a class="grey-text text-lighten-3" href="http://fst.univ-lorraine.fr/">Faculté des Sciences et Technologies</a></li>
+          <li><a class="grey-text text-lighten-3" href="https://ent.univ-lorraine.fr/">Espace Numérique de Travail (ENT)</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+      © 2017 Copyright
+    </div>
+  </div>
+</footer>
+
+<!-- Previous Footer
+<hr>
+<div class="container-fluid">
+  <div class="row">
+    <div class="float-left col s2"><a href="http://fst.univ-lorraine.fr/"><img src="/src/assets/images/fst-logo.png"
+                                      alt="Faculté des sciences et technologies de Nancy"/></a></div>
+
+    <div class="text-bold col s8"><br><br><br><span>© COPYRIGHT 2017 - LMFI</span>
+    </div>
+    <div class="col s2"><a href="http://www.univ-lorraine.fr/"><img src="/src/assets/images/uni-logo.png" style="display: inline;"  alt="Université de Lorraine"/></a></div>
+  </div>
+</div> -->
 </body>
 </html>

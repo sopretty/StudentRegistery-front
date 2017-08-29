@@ -1,0 +1,12 @@
+.text-bold {
+  font-weight: bold;
+  color: #4CAF50;
+  font-size: 18px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.text-size-50 {
+  font-size:50%;
+}
